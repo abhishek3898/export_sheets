@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "sheets"
+    "sheets",
+    "rest_framework",
+    "serializer"
 ]
 
 MIDDLEWARE = [

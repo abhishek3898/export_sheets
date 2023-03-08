@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.urls import path
 from .import views
+from sheets import views
+
 
 urlpatterns = [
-    path("",views.Exportsheets,name="sheets")
+    path("",views.Exportsheets,name="sheets"),
+    path("sheetexport/",views.ExportImportCsv.as_view(),name="sheets")
     
 ]
